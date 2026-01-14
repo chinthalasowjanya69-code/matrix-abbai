@@ -1,0 +1,196 @@
+/* Community styles */
+
+.community {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.community-card {
+  max-width: 600px;
+  padding: var(--spacing-2xl);
+  text-align: center;
+  border-radius: var(--radius-xl);
+  position: relative;
+}
+
+.community-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.community-telegram-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(138, 43, 226, 0.3);
+  box-shadow: var(--shadow-glow);
+  transition: all 0.3s ease;
+}
+
+.community-telegram-icon:hover {
+  transform: scale(1.1);
+  border-color: var(--purple-primary);
+}
+
+.community-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.community-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.community-cta {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.community-caption {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .community {
+    min-height: 60vh;
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .community-card {
+    padding: var(--spacing-xl);
+  }
+  
+  .community-title {
+    font-size: 2rem;
+  }
+  
+  .community-subtitle {
+    font-size: 1rem;
+  }
+  
+  .community-icon {
+    font-size: 2.5rem;
+  }
+  
+  .community-telegram-icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community {
+    min-height: 50vh;
+    padding: var(--spacing-md) 0;
+  }
+  
+  .community-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .community-title {
+    font-size: 1.8rem;
+  }
+  
+  .community-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .community-icon {
+    font-size: 2rem;
+  }
+  
+  .community-telegram-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 430px) {
+  .community {
+    flex-direction: column;
+    min-height: 40vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .community-card {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    padding: var(--spacing-md);
+  }
+  .community-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .community {
+    flex-direction: column;
+    min-height: 35vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .community-card {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    padding: var(--spacing-sm);
+  }
+  .community-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .community {
+    flex-direction: column;
+    min-height: 30vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .community-card {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    padding: var(--spacing-xs);
+  }
+  .community-title {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .community {
+    flex-direction: column;
+    min-height: 25vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  .community-card {
+    width: 100%;
+    max-width: 100vw;
+    min-width: 0;
+    padding: 2px;
+  }
+  .community-title {
+    font-size: 0.9rem;
+  }
+}
