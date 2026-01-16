@@ -82,26 +82,43 @@ const Navbar = () => {
       </div>
 
       {isMenuOpen && (
-        <motion.div
-          className="navbar-mobile-menu"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-        >
-          <a onClick={() => scrollToSection('home')}>Home</a>
-          <a onClick={() => scrollToSection('about')}>About</a>
-          <a onClick={() => scrollToSection('community')}>Community</a>
-          <a onClick={() => scrollToSection('contact')}>Contact</a>
-          <button
-            className="btn-primary"
-            onClick={() => {
-              setIsMenuOpen(false);
-              window.open('https://t.me/matrixabbaisiddarth', '_blank');
+        <>
+          {/* Overlay to prevent background clicks */}
+          <div
+            className="navbar-mobile-overlay"
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              width: '100vw',
+              height: '100vh',
+              background: 'rgba(0,0,0,0.01)',
+              zIndex: 1999,
             }}
+            onClick={() => setIsMenuOpen(false)}
+          />
+          <motion.div
+            className="navbar-mobile-menu"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            style={{ zIndex: 2000 }}
           >
-            Join Community
-          </button>
-        </motion.div>
+            <a onClick={() => scrollToSection('home')}>Home</a>
+            <a onClick={() => scrollToSection('about')}>About</a>
+            <a onClick={() => scrollToSection('community')}>Community</a>
+            <a onClick={() => scrollToSection('contact')}>Contact</a>
+            <button
+              className="btn-primary"
+              onClick={() => {
+                setIsMenuOpen(false);
+                window.open('https://t.me/matrixabbaisiddarth', '_blank');
+              }}
+            >
+              Join Community
+            </button>
+          </motion.div>
+        </>
       )}
     </motion.nav>
   )

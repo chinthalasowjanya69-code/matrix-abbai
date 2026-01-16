@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import ContactForm from './ContactForm'
 import '../styles/hero.css'
-import heroImage from '../assets/images/fellow.png'
+const heroImage = "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/cdarth77-imagetourl.cloud-1768555561896-lav5nu.JPG"
 
 const Hero = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false)
@@ -88,18 +88,18 @@ const Hero = () => {
           <div className="hero-image-card glass glow">
             <div className="hero-image-placeholder">
               <img
-                src={heroImage}
-                alt="Hero"
-                className="placeholder-icon hero-image-display hero-image-zoomed"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '24px',
-                  objectFit: 'cover',
-                  objectPosition: 'center 70%',
-                  background: '#18122B',
-                  maxHeight: '500px',
-                }}
+                  src={heroImage}
+                  alt="Hero"
+                  className="placeholder-icon hero-image-display hero-image-zoomed"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '24px',
+                    objectFit: 'cover',
+                    objectPosition: 'center 70%',
+                    background: '#18122B',
+                    maxHeight: '500px',
+                  }}
               />
               <p>Hero Image</p>
             </div>

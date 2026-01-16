@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import '../styles/journey.css'
-import siidarttImage from '../assets/images/siidartt.png'
+const siidarttImage = "https://image2url.com/r2/default/images/1768415972597-045ad016-c042-441d-a19b-9d86447579d2.png"
 
 const Journey = () => {
   return (
