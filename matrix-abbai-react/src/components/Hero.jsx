@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useState } from 'react'
 import ContactForm from './ContactForm'
 import '../styles/hero.css'
-const heroImage = "https://pub-141831e61e69445289222976a15b6fb3.r2.dev/Image_to_url_V2/cdarth77-imagetourl.cloud-1768555561896-lav5nu.JPG"
+const heroImage = "https://image2url.com/r2/default/images/1768721060718-c7008ea7-05aa-4558-a7fc-239bcf5ce0b8.png"
 
 const Hero = () => {
   const [isContactFormOpen, setIsContactFormOpen] = useState(false)
